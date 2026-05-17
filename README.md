@@ -2,14 +2,18 @@
 
 A full-stack mini service request platform built for the GlobalTNA Full-Stack Developer Intern Technical Assessment.
 
-## Tech Stack
+This project allows homeowners to create service requests and tradespeople to manage job status updates.
 
-### Frontend
-- Next.js
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js (App Router)
 - Tailwind CSS
 - Axios
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 - MongoDB
@@ -20,71 +24,25 @@ A full-stack mini service request platform built for the GlobalTNA Full-Stack De
 # Features
 
 - View all job requests
-- Create new service requests
-- Update job status
+- Create new service requests (Homeowner only)
+- View job details
+- Update job status (Tradesperson only)
+- Delete jobs (Homeowner only)
+- Search jobs by keyword
+- Filter jobs by category
+- Role-based access using localStorage
+
+---
+
+# User Roles
+
+## Homeowner
+- Create new job requests
 - Delete jobs
-- Search jobs
-- Filter by category
+
+## Tradesperson
+- Update job status (In Progress / Closed)
 
 ---
 
-# Backend Setup
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-Backend runs on:
-
-```txt
-http://localhost:5000
-```
-
----
-
-# Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on:
-
-```txt
-http://localhost:3000
-```
-
----
-
-# Environment Variables
-
-Create a `.env` file inside the backend folder.
-
-Example:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-```
-
----
-
-# API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /api/jobs | Get all jobs |
-| GET | /api/jobs/:id | Get single job |
-| POST | /api/jobs | Create new job |
-| PATCH | /api/jobs/:id | Update job status |
-| DELETE | /api/jobs/:id | Delete job |
-
----
-
-# Author
-
-vidushi dewlini
+# Project Structure
